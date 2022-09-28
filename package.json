@@ -21,7 +21,7 @@
   "scripts": {
     "build": "tsc",
     "check": "npm run lint && npm run build && npm run test",
-    "clean": "rimraf build coverage test-reports",
+    "clean": "rimraf out coverage test-reports",
     "clean-and-check": "npm run clean && npm run check",
     "lint": "eslint './src/**/*.ts'",
     "lint:fix": "eslint './src/**/*.ts' --fix",
