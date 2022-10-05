@@ -37,7 +37,7 @@ describe ('Is Fib Like', () => {
         expect(isFibLike([1, 5, 7, 12, 19])).toBe(false);
     });
 
-    it ('should return false for any sequence with less than 2 digits', () => {
-        expect(isFibLike([1])).toBe(false);
+    it ('should return true for any sequence with less than 2 digits', () => {
+        expect(isFibLike([1])).toBe(true);
     });
 });
