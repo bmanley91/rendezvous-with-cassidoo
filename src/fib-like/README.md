@@ -10,3 +10,5 @@ fibLike(10, 20, n)
 fibLike(3, 7, n)
 [3, 7, 10, 17, 27]
 ```
+
+Extra credit: Given a sequence, determine if the sequence is “fibonacci-like”.

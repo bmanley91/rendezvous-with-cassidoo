@@ -13,3 +13,15 @@ export const fibLike = (first: number, second: number, n: number): number[] => {
 
     return output;
 };
+
+export const isFibLike = (inputArr: number[]): boolean => {
+    // Go backwards through the input array until we reach the first two digits.
+    // Make sure that the current number is the sum of the previous two numbers.
+    for (let index = inputArr.length - 1; index > 1; index--) {
+        if (inputArr[index] !== inputArr[index - 1] + inputArr[index - 2]) {
+            return false;
+        }
+    }
+    // If we get this far the sequence must be fib-like.
+    return true;
+};
