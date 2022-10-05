@@ -13,3 +13,7 @@ export const fibLike = (first: number, second: number, n: number): number[] => {
 
     return output;
 };
+
+export const isFibLike = (inputArr: number[]): boolean => {
+    return false;
+};
