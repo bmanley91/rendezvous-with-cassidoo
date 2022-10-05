@@ -1,4 +1,4 @@
-import { fibLike } from "./fib-like";
+import { fibLike } from './fib-like';
 
 describe ('Fib Like', () => {
     it ('should return the correct series for a basic input', () => {
@@ -19,7 +19,7 @@ describe ('Fib Like', () => {
 
     describe.each([1, 0, -1]) ('Invalid Inputs', (input) => {
         it (`should reject n < 2: ${input}`, () => {
-            expect(fibLike(10, 20, input)).toThrow('Invalid Input');
+            expect(() => fibLike(10, 20, input)).toThrow('Invalid Input');
         });
     });
 });
