@@ -15,16 +15,12 @@ const shortenWord = (input: string, length: number): string => {
         const currentChar = input.charAt(i);
         if (isLetter(currentChar)) {
             if (charCounter < length) {
-                console.log(`adding char ${currentChar}`);
                 output += currentChar;
                 charCounter++;
             }
         } else {
-            console.log(`adding char ${currentChar}`);
             output += currentChar;
         }
-        console.log(`now it's ${output}`);
-        console.log(`counter ${charCounter}`);
     }
     return output;
 };
