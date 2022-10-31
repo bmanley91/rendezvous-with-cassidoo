@@ -5,9 +5,17 @@
  * @param end Ending char for output string
  */
 export const asciiCharsBetween = (start: string, end: string): string => {
-    return `${start}${end}`;
+    let output = '';
+    let currentChar = start;
+
+    while (currentChar <= end) {
+        output += currentChar;
+        currentChar = String.fromCharCode(currentChar.charCodeAt(0) + 1);
+    }
+    
+    return output;
 };
 
 export const problem = () => {
-    console.log(asciiCharsBetween('␠', '~'));
+    console.log(asciiCharsBetween(' ', '~'));
 };
