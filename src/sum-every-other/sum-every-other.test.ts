@@ -9,8 +9,8 @@ describe ('Sum Every Other', () => {
         expect(actual).toEqual(expected);
     });
 
-    it ('ignores digits past decimal point', () => {
-        const expected = 26;
+    it ('handles digits past decimal point', () => {
+        const expected = 1;
 
         const actual = sumEveryOther(1010.11);
 
