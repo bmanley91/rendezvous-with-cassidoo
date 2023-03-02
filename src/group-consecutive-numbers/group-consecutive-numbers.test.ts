@@ -17,4 +17,12 @@ describe ('Group Consecutive Numbers', () => {
 
         expect(actual.length).toBe(0);
     });
+
+    it ('should handle an empty input array', () => {
+        const input: number[] = [];
+
+        const actual = repeatedGroups(input);
+
+        expect(actual.length).toBe(0);
+    })
 });
