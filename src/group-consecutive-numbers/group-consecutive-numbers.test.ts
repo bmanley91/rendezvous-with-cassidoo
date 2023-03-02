@@ -1,4 +1,4 @@
-import { repeatedGroups } from "./group-consecutive-numbers";
+import { repeatedGroups } from './group-consecutive-numbers';
 
 describe ('Group Consecutive Numbers', () => {
     it ('returns groups of consecutive repeating numbers in the input array', () => {

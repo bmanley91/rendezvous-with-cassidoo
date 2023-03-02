@@ -12,8 +12,6 @@ export const repeatedGroups = (input: number[]): number[][] => {
     //// Otherwise:
     ////// Just move on
 
-    console.log(`input ${input}`);
-
     const output = [];
     let currentGroup = [];
 
