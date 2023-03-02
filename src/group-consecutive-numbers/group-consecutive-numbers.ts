@@ -37,4 +37,4 @@ export const repeatedGroups = (input: number[]): number[][] => {
     }
 
     return output;
-}
+};

@@ -24,5 +24,5 @@ describe ('Group Consecutive Numbers', () => {
         const actual = repeatedGroups(input);
 
         expect(actual.length).toBe(0);
-    })
+    });
 });
