@@ -3,6 +3,10 @@ import { oddSquareSum } from './odd-square-sum';
 describe ('Odd Square Sum', () => {
     it.each([
         {
+            input: 0,
+            expectedAnswer: 0
+        },
+        {
             input: 1,
             expectedAnswer: 0
         }, {
